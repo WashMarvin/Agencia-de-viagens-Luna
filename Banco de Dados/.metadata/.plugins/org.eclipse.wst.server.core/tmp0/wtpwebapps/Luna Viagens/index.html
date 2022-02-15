@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+  <link type="text/css" rel="stylesheet" href="estilo.css">
+  <title>Agencia</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-menu">
+      <div class="container">
+        <div class="header-logo">
+          <a href="index.html"><img src="./img/logo.png" alt="img_logo"></a>
+        </div>
+        <div class="header-nav-menu">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="passagens.html">Passagens</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pacotes.html">Pacotes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="choice">
+      <div class="info1">Escolha uma opção</div>
+      <div class="info-button1">
+        <button><a href="passagens.html">passagem</a></button>
+      </div>
+      <div class="info2">
+        <hr style="border: 1px solid #fa8571;" width="350px;">
+      </div>
+      <div class="info-button2">
+        <button><a href="pacotes.html">Consultar pacotes</a></button>
+      </div>
+      <div class="info3">
+        Faça uma busca
+      </div>
+    </div>
+    <div class="header-search">
+      <div class="container">
+        <form action="findItinerario" method="get" class="form_search">
+          <div class="radio">
+            <input type="radio" name="ida_volta" id="ida_volta" checked>
+            <label for="ida_volta">Ida e Volta</label>
+            <input type="radio" name="ida" id="ida" class="rd_2">
+            <label for="ida">Somente Ida</label>
+          </div>
+          <div class="input-group-m">
+            <label for="">Cidade de origem</label>
+            <input type="text" name="pesquisa" aria-label="Cidade origem" class="form-control" placeholder="Escolha sua origem">
+          </div>
+          <div class="input-group-n">
+            <label for="">Cidade de destino</label>
+            <input type="text" name="pesquisa" aria-label="Cidade destino" class="form-control" placeholder="Escolha seu destino">
+          </div>
+          <div class="input-group-o">
+            <label for="">Data da ida</label>
+            <input type="date" aria-label="Data ida" class="form-control">
+          </div>
+          <div class="input-group-p">
+            <label for="">Data da volta</label>
+            <input type="date" aria-label="Data volta" class="form-control">
+          </div>
+          <div class="botao">
+            <button type="button" class="btn btn-danger">Pesquisar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="secao-photo">
+        <h3>Nossos destinos</h3>
+        <div class="photo-img">
+          <div class="photo-card">
+            <span>
+              <h5>Congonhas - MG</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aut sint placeat dolor cumque natus reprehenderit obcaecati.
+              </p>
+              <button>Saiba Mais</button>
+            </span>
+            <img src="./img/photo_cong_mg.png" alt="photo_congonhas_mg">
+          </div>
+          <div class="photo-card">
+            <span>
+              <h5>São José dos Campos - SP</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aut sint plac reprehenderit obcaecati.
+              </p>
+              <button>Saiba Mais</button>
+            </span>
+            <img src="./img/photo_saojose_sp.png" alt="photo_saojose_sp">
+          </div>
+          <div class="photo-card">
+            <span>
+              <h5>Ilhéus - BA</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aut sint placeat dolor cumque natus reprehenderit obcaecati.
+              </p>
+              <button>Saiba Mais</button>
+            </span>
+            <img src="./img/photo_ilheus_ba.png" alt="photo_ilheus_ba">
+          </div>
+        </div>
+      </div>
+      <div class="photo-img">
+        <div class="photo-card">
+          <span>
+            <h5>Linhares - ES</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aut sint placeat dolor cumque natus reprehenderit obcaecati.
+            </p>
+            <button>Saiba Mais</button>
+          </span>
+          <img src="./img/photo_linhares_es.png" alt="photo_linhares_es">
+        </div>
+        <div class="photo-card">
+          <span>
+            <h5>Altamira - PA</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aut sint placeat dolor cumque natus reprehenderit obcaecati.
+            </p>
+            <button>Saiba Mais</button>
+          </span>
+          <img src="./img/photo_altamira_pa.png" alt="photo_altamira_pa">
+        </div>
+        <div class="photo-card">
+          <span>
+            <h5>Paraty - RJ</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aut sint placeat dolor cumque natus reprehenderit obcaecati.
+            </p>
+            <button>Saiba Mais</button>
+          </span>
+          <img src="./img/photo_paraty_rj.png" alt="photo_paraty_rj">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>&copy; LUNA VIAGENS - 2022</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./css/estilo.css">
+    <title>Passagens</title>
+</head>
+
+<body>
+    <div class="header-menu">
+        <div class="container">
+            <div class="header-logo">
+                <a href="index.html"><img src="./img/logo.png" alt="img_logo"></a>
+            </div>
+            <div class="header-nav-menu">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="passagens.html">Passagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pacotes.html">Pacotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="sessao-passagem">
+            <div class="titulo-passagem">
+                <h3>Compre sua passagem</h3>
+            </div>
+            <div class="passagem-wrapper">
+                <div class="passagem-form">
+                    <form>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="form-group col-md-10">
+                                    <label for="inputCidadeOrigem">Origem</label>
+                                    <input type="text" class="form-control" id="inputCidadeOrigem"
+                                        placeholder="Em que cidade você está?">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputEstado">Estado</label>
+                                    <select id="inputEstado" class="form-control">
+                                        <option>...</option>
+                                        <option value="AC">AC</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AP">AP</option>
+                                        <option value="AM">AM</option>
+                                        <option value="BA">BA</option>
+                                        <option value="CE">CE</option>
+                                        <option value="DF">DF</option>
+                                        <option value="ES">ES</option>
+                                        <option value="GO">GO</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MT">MT</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MG">MG</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PB">PB</option>
+                                        <option value="PR">PR</option>
+                                        <option value="PE">PE</option>
+                                        <option value="PI">PI</option>
+                                        <option value="RJ">RJ</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RS">RS</option>
+                                        <option value="RO">RO</option>
+                                        <option value="RR">RR</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SP">SP</option>
+                                        <option value="SE">SE</option>
+                                        <option value="TO">TO</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-10">
+                                    <label for="inputCidadeDestino">Destino</label>
+                                    <input type="text" class="form-control" id="inputCidadeDestino"
+                                        placeholder="Para qual cidade você quer ir?">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputEstado">Estado</label>
+                                    <select id="inputEstado" class="form-control">
+                                        <option>...</option>
+                                        <option value="AC">AC</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AP">AP</option>
+                                        <option value="AM">AM</option>
+                                        <option value="BA">BA</option>
+                                        <option value="CE">CE</option>
+                                        <option value="DF">DF</option>
+                                        <option value="ES">ES</option>
+                                        <option value="GO">GO</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MT">MT</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MG">MG</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PB">PB</option>
+                                        <option value="PR">PR</option>
+                                        <option value="PE">PE</option>
+                                        <option value="PI">PI</option>
+                                        <option value="RJ">RJ</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RS">RS</option>
+                                        <option value="RO">RO</option>
+                                        <option value="RR">RR</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SP">SP</option>
+                                        <option value="SE">SE</option>
+                                        <option value="TO">TO</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputDataIda">Data de ida</label>
+                                    <input type="datetime-local" class="form-control" id="inputDataIda"
+                                        placeholder="Data de saída">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputDataVolta">Data de volta</label>
+                                    <input type="datetime-local" class="form-control" id="inputDataVolta"
+                                        placeholder="Data de volta">
+                                </div>
+                            </div>
+                            <div class="preco">
+                                <button type="submit" class="btn btn-success">Valor da passagem</button>
+                                <hr>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Nome completo</label>
+                                <input type="text" class="form-control" id="inputNome" placeholder="Insira seu nome">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputCpf">CPF</label>
+                                    <input type="number" class="form-control" id="inputCpf"
+                                        placeholder="Insira seu CPF">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputRg">RG</label>
+                                    <input type="number" class="form-control" id="inputRg" placeholder="Insira seu RG">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Insira seu email">
+                            </div>
+                            <div class="passagem-button">
+                                <button type="submit" class="btn btn-warning col-md-4">Comprar</button>
+                                <button type="reset" class="btn btn-success col-md-4">Limpar</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>&copy; LUNA VIAGENS - 2022</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+package dao;
+
+import java.util.List;
+
+import model.itinerario;
+
+public class crudItinerario {
+	
+	public static List<itinerario> find(String pesquisa) {return null;}
+	public static itinerario findByPk(int clienteId) {return null;}
+
+
+}

@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;600&family=Josefin+Sans:wght@700&family=Mulish:wght@300;400&display=swap');
+
+html body {
+    margin: 0;
+    padding: 0; 
+
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu {
+    display: flex;
+    /*background: rgba(8, 8, 71, 0.164);*/
+    align-items: center;
+    background: rgba(229, 226, 226, 0.151);
+    box-shadow: 0 0 3px 0 rgb(121, 118, 118);
+}
+
+.header-nav-menu {
+    margin: 0 auto;
+
+}
+
+.header-menu ul li a {
+    justify-content: space-evenly;
+    margin: 30px;
+    font-family: "Josefin Sans", serif;
+    font-size: 1rem;
+    color: rgb(121, 116, 199);
+    text-transform: uppercase;
+}
+
+.header-menu ul li a:hover {
+    color: rgb(198, 196, 228);
+}
+
+.header-central{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    float: left;
+    width: 70%;
+}
+
+.header-logo {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.choice {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-bottom: 10px solid #195c89;;
+}
+
+.info1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin: 20px auto;
+    font-family: "Josefin Sans";
+    font-size: 2rem;
+    color: #195c89;
+}
+
+.info-button1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0 auto;
+    
+}
+
+.info-button1 button {
+    width: 18rem;
+    padding: 1rem;
+    font-family: "Baloo Da 2";
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 2rem;
+    background: #fa8571;
+    border: none;
+    box-shadow: 1px 2px 5px #0000006c; 
+    outline: none;  
+}
+
+.info-button1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.info-button1 button:hover {
+    background-color: #db4a31;
+}
+
+.info2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Josefin Sans";
+    font-size: 1.5rem;
+    color: #195c89;
+}
+
+.info-button2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin: 0 auto;
+}
+
+.info-button2 button {
+    width: 18rem;
+    padding: 1rem;
+    font-family: "Baloo Da 2";
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 2rem;
+    background: #fa8571;
+    border: none;
+    box-shadow: 1px 2px 5px #0000006c;
+    outline: none;
+}
+
+.info-button2 a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.info-button2 button:hover {
+    background-color: #db4a31;
+}
+
+
+.info3 {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin: 0 auto;
+    font-family: "Josefin Sans";
+    font-size: 2rem;
+    color: #195c89;
+}
+
+.info3 h3 {
+    padding: 20px 20px;
+}
+
+/*
+.header-img-central {
+    margin: 0;
+    padding: 0;
+    background-image: url("");
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: .8;
+    background-size: cover;
+    height: 100px;
+}
+*/
+
+.header-search {
+    /* background-color: rgba(8, 8, 71, 0.164);*/
+    background: #195c89;
+}
+
+.form_search {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 30px 50px;
+    background: #195c89;
+    border-radius: 0 0 2rem 2rem;
+    color: rgb(155, 148, 148);
+}
+
+.radio {
+    grid-row: 1/2;
+    padding-top: 20px;
+    font-size: .8rem; 
+    color: white;  
+    font-family: "Baloo Da 2" serif;
+}
+
+.radio input {
+    width: 18px;
+    height: 18px;
+}
+
+.rd_2 {
+    margin-left: 20px;
+}
+
+.input-group-m {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: white;
+    font-family: "Baloo Da 2" serif;
+
+
+}
+
+.input-group-n {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: white;
+    font-family: "Baloo Da 2" serif;
+}
+
+.input-group-o {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: white;
+    font-family: "Baloo Da 2" serif;
+
+}
+
+.input-group-p {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    color: white;
+    font-family: "Baloo Da 2" serif;
+
+}
+
+.botao {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    margin: 0 auto;
+    font-family: "Baloo Da 2" serif;      
+}
+
+.botao button {
+    width: 20rem;
+    font-size: 1.5rem; 
+    border-radius: .5rem;
+    box-shadow: 1px 2px 5px #0000006c;
+
+}
+
+.secao-photo h3 {
+    width: 20%;
+    margin: 10px 70px 0;
+    padding: 15px 30px 15px;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    background-color: #a5646442;
+    color: rgb(26, 30, 87);
+
+}
+
+.photo-img {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding: 0 50px;
+    height: 300px;
+    background-color: #a5646442;
+}
+
+.photo-card {
+    display: flex;
+    object-fit: cover;
+    margin: 20px 15px;
+    width: 33%;
+    background: #262626;
+    justify-content: end;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, .5);
+}
+
+.photo-card span {
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    background-color: yellow;
+    padding: 10px;
+    font-family: "Baloo Da 2";
+    color: rgb(26, 30, 87);
+}
+
+.photo-card span h5 {
+    color: red;
+    font-weight: 600;
+}
+
+.photo-card img {
+    opacity: .9;
+}
+
+.photo-card button {
+    border-radius: 2rem;
+    background-color: rgb(17, 0, 255);
+    border: none;
+    box-shadow: 1px 2px 5px #00000071;
+    padding: 5px;
+    color: white;
+    font-family: "Baloo Da 2";
+}
+
+.photo-card button:hover {
+    background-color: rgb(97, 88, 224);
+}
+
+
+.footer {
+
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: "Josefin Sans";
+    background: #195c89;
+    color: white;
+    font-weight: lighter;
+}
+
+
+/* -- Estilos pagina de cadastro */
+
+.fundo {
+    background: #787681;
+}
+
+.formulario {
+    position: relative;
+    display: flex;
+    margin: 50px auto;
+    width: 40%;
+    background: rgb(26, 30, 87);
+    color: white;
+}
+
+.formulario form {
+    margin: 20px auto;   
+}
+
+
+.btn {
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+}
+
+/* -- Estilos pagina de contato */
+
+.sessao-contato {
+    width: 100%;
+    height: 100vh;
+    background-color: #2a2738a2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-wrapper {
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+}
+
+.contato-left {
+    width: 35%;
+    background: linear-gradient(rgba(15,15,15,0.6),rgba(22,22,22,0.9)), url(../img/contato-img.png);
+    background-size: cover;
+}
+
+.contato-right {
+    width: 65%;
+    background: #eeee;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.sessao-contato h1 {
+    width: 100%;
+    text-align: center;
+    font-family: "Josefin Sans";
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.sessao-contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.field {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+    font-family: "Mulish";
+    border-bottom: 2px dashed #636363;
+    height: 3rem;
+    outline: none;
+
+}
+
+.input-group textarea {
+    padding-top: 1rem;
+    max-width: 30rem;
+    max-height: 5rem;
+    
+}
+
+.input-group{
+    position: relative;
+}
+
+.field-label {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    font-size: 1.2rem;
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.field:focus ~ label {
+    top: 0%;
+    font-size: 1rem;
+}
+
+.field:focus {
+    border-bottom: 1px solid;
+}
+
+.btn-submit {
+    text-transform: uppercase;
+    width: 100%;
+    height: 2rem;
+    padding: 2px;
+}
+
+/* -- Estilos pagina de passagens */
+
+.sessao-passagem {
+    margin: 0 auto;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-passagem {
+    padding: 10px;
+    font-family: "Josefin Sans";
+    font-size: 2rem;
+    color: rgb(26, 30, 87);
+}
+
+.passagem-wrapper {
+    display: flex;
+    width: 50%;
+    padding: 30px;
+    border: 1px solid blue;
+    background-color: rgb(26, 30, 87);
+    color: white;
+}
+
+.preco {
+    padding: 15px 0;
+}
+
+.preco hr {
+    border: 2px solid rgb(89, 150, 179);
+}
+
+.passagem-button {
+    display: flex;
+}

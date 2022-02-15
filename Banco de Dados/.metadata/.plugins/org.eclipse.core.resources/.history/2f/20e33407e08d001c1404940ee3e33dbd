@@ -1,0 +1,47 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import database.SQLConnection;
+import model.itinerario;
+import dao.crudItinerario;
+
+public class ItinerarioDao implements crudItinerario {
+	
+	private static Connection connection = SQLConnection.createConnection();
+	private static String sql;
+	
+	
+	public static List<itinerario> find(String pesquisa) {
+		sql = String.format("SELECT * FROM itinerario WHERE cidadeOrigem LIKE '%s%%' or origemDestino LIKE '%s%%' ", pesquisa, pesquisa);
+		List<itinerario> itinerarios = new ArrayList()<Itinerario>();
+		
+		try {
+			Statement statement = connection.createStatement();
+			ResultSet resultSet = executeQuery(sql);
+			
+			while (resultSet.next()) {
+				itinerario itinerario = new Itinerario();
+				itinerario.setId(resultSet.getInt("id"));
+				itinerario.setNome(resultSet.getString("cidade_origem"));
+				itinerario.setNome(resultSet.getString("cidade_destino"));
+				itinerario.setNome(resultSet.getString("data_ida"));
+				itinerario.setNome(resultSet.getString("data_volta"));
+				
+				clientes.add(cliente);
+			}
+			
+			System.out.println("--correct find itinerios");
+				return itinerarios;
+			
+		} catch(SQLException e) {}
+			System.out.println("--incorrect find itinerios " + e.getMessage());
+			return null;}
+	
+	public static itinerario findByPk(int itinerarioId) {return null;}
+
+}

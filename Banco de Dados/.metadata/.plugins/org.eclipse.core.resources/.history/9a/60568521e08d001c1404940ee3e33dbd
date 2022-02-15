@@ -1,0 +1,49 @@
+package model;
+
+public class itinerario {
+	
+	private int id;
+	private String cidadeOrigem;
+	private String cidadeDestino;
+	private String dataIda;
+	private String dataVolta;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getCidadeOrigem() {
+		return cidadeOrigem;
+	}
+	public void setCidadeOrigem(String cidadeOrigem) {
+		this.cidadeOrigem = cidadeOrigem;
+	}
+	public String getCidadeDestino() {
+		return cidadeDestino;
+	}
+	public void setCidadeDestino(String cidadeDestino) {
+		this.cidadeDestino = cidadeDestino;
+	}
+	public String getDataIda() {
+		return dataIda;
+	}
+	public void setDataIda(String dataIda) {
+		this.dataIda = dataIda;
+	}
+	public String getDataVolta() {
+		return dataVolta;
+	}
+	public void setDataVolta(String dataVolta) {
+		this.dataVolta = dataVolta;
+	}
+	@Override
+	public String toString() {
+		return "itinerario [id=" + id + ", cidadeOrigem=" + cidadeOrigem + ", cidadeDestino=" + cidadeDestino
+				+ ", dataIda=" + dataIda + ", dataVolta=" + dataVolta + "]";
+	}
+	
+	
+
+}
